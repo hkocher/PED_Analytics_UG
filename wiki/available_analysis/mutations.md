@@ -1,0 +1,3 @@
+This module allows to screen user-defined gene for mutations identified across [GENIE](http://www.aacr.org/Research/Research/Pages/aacr-project-genie.aspx#.Wrkpy5PwZ25) samples representing various types of pancreatic tumour as well as pancreatic precursor lesions and benign conditions. The horizontal bars correspond to different biological groups and the colours indicate frequencies of various mutations detected in the queried gene. The colour key is presented in the top right corner of the figure.
+
+![mutations](https://github.research.its.qmul.ac.uk/hfx320/PED_Analytics/blob/master/images/doc/mutation.png)
