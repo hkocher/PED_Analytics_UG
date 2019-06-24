@@ -1,4 +1,4 @@
-# Gene Expression
+## Gene Expression
 
 This analytical module visualises the distribution of mRNA expression measurements across all samples for a user-defined gene, as well as all the aberrantly expressed genes in the whole-genome.
 
