@@ -38,8 +38,6 @@ Integrating Gene expression, copy number and mutations | [wiki/available_analysi
 | Manage a new record in TCGA, CCLE, Genie | [wiki/maintenance/manage_record](https://github.com/wynstep/PED_Analytics_UG/blob/master/wiki/maintenance/manage_record.md) |
 | Manage a study in ICGC | [wiki/maintenance/manage_icgc](https://github.com/wynstep/PED_Analytics_UG/blob/master/wiki/maintenance/manage_icgc.md) |
 | Manage returned data | [wiki/maintenance/manage_dr](https://github.com/wynstep/PED_Analytics_UG/blob/master/wiki/maintenance/manage_dr.md)
-| Update the statistical plots | [wiki/maintenance/update_statistics](https://github.com/wynstep/PED_Analytics_UG/blob/master/wiki/maintenance/update_statistics.md) |
-| Update the Whole Genome analyses (expression, CNA and Data Integration) | [wiki/maintenance/update_wg_plots](https://github.com/wynstep/PED_Analytics_UG/blob/master/wiki/maintenance/update_wg_plots.md)
 
 ### Active development
 

@@ -21,7 +21,7 @@ This section will simulate a real case of use, by using a __SMAC-mediated proced
 	1. [Map PMID information](#map-PMID-information)
 	2. [Store omics data](#store-omics-data)
 	3. [Perform bioinformatics analysis](#perform-bioinformatics-analysis)
-	4. [Update gene list](#update-gene-list)
+	4. [Create gene list](#create-gene-list)
 	5. [Update statistics](#update-statistics)
 
 ### SMAC-mediated procedure
@@ -41,8 +41,9 @@ This section will simulate a real case of use, by using a __SMAC-mediated proced
 In this example, the selected dataset has just expression data associated. We developed a script that is able to detect the presence of expression, CNA and mutations, for generating whole-genome CIRCOS plots, accordingly.
 > `python scripts/data_preparation/create_circos.py --dir data/16053509/GSE1542`
 ##### Update statistics
-When the procedure is completed, we need to update the number of samples and correlated data types into the web resource.
-> `python scripts/data_preparation/calculate_statistics.py --dir data --outdir src/stats`
+I created a python script that aims at updating the statistics of PED analytics by generating an interactive plot. The script is named __calculate_statistics.py__ and is located in `scripts/data_preparation`. In order to generate the updated statistics, we need to run:
+
+> python scripts/data_preparation/calculate_statistics.py --folder data/ --outdir src/stats/
 
 ### Manual procedure
 
@@ -77,12 +78,20 @@ Please click [here](#additional-files) if you need details about the file format
 | Analysis | Command |
 | ------ | ---- |
 | PCA | `Rscript scripts/R_scripts/PCA.R -e data/16053509/GSE1542/eData.1.tsv -t data/16053509/GSE1542/target.1.tsv -c target -u array -p 3 -d data/16053509/GSE1542/` |
-| Tumour purity | `Rscript scripts/R_scripts/PCA.R -e data/16053509/GSE1542/eData.1.tsv -t data/16053509/GSE1542/target.1.tsv -c target -d data/16053509/GSE1542/` |
-| Gene expression (WG) | `python scripts/data_preparation/create_circos.py --dir data/16053509/GSE1542` |
+| Tumour purity | `Rscript scripts/R_scripts/tumour_purity.R -e data/16053509/GSE1542/eData.1.tsv -t data/16053509/GSE1542/target.1.tsv -c target -d data/16053509/GSE1542/` |
+| Whole genome plots | `python scripts/data_preparation/create_circos.py --dir data/16053509/GSE1542` |
+
+**Please Note**: all the other bioinformatics analyses in PED analytics are run in *live* and relies on the presence **at least** of the expression data (eData) and the target file.
+
+##### Update statistics
+I created a python script that aims at updating the statistics of PED analytics by generating an interactive plot. The script is named __calculate_statistics.py__ and is located in `scripts/data_preparation`. In order to generate the updated statistics, we need to run:
+
+> python scripts/data_preparation/calculate_statistics.py --folder data/ --outdir src/stats/
 
 ### Additional files
 
 __Copy Number Alteration__: _cna.1.tsv_
+
 | Gene name | GSM... | GSM... | GMS... | .... |
 | --------- | ------ | ------ | ------ | ---- |
 | Gene1 | 0.007 | 0.051 | 0.469 | ... |
@@ -91,6 +100,7 @@ __Copy Number Alteration__: _cna.1.tsv_
 | ... | ... | ... | ... | ... |
 
 _cna.chr.1.tsv_
+
 | Gene name | Chromosome | Position | GSM... | GSM... | GMS... | .... |
 | --------- | ---------- | -------- | ------ | ------ | ------ | ---- |
 | Gene1 | 1 | 1292376 | 0.007 | 0.051 | 0.469 | ... |
@@ -99,6 +109,7 @@ _cna.chr.1.tsv_
 | ... | ... | ... | ... | ... | ... | ... |
 
 __Mutations__: _mutations.1.tsv_
+
 | sample | gene | effect | chr | start | end | reference | alt |
 | ------ | ---- | ------ | --- | ----- | --- | --------- | --- |
 | Sample 1 | PLEK | Frame Shift Deletion | chr2 | 68622834 | 68622834 | C | - |
@@ -107,6 +118,7 @@ __Mutations__: _mutations.1.tsv_
 | ... | ... | ... | ... | ... | ... | ... | ... |
 
 __Gene Fusion__: _fusion.1.tsv_
+
 | TUMOR_SAMPLE_BARCODE | HUGO_SYMBOL | FUSION | CENTER | DNA_SUPPORT | RNA_SUPPORT | FRAME | COMMENTS |
 | --------- | ------ | ------ | ------ | ---- | --------- | ------ | ------ | ------ | ---- |
 | Sample1 | EGFR | EGFR fusion | VICC | yes | unknown | unknown | |
