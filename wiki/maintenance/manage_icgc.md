@@ -146,8 +146,8 @@ __Mutations__: _mutations.1.tsv_
 __Gene Fusion__: _fusion.1.tsv_
 
 | TUMOR_SAMPLE_BARCODE | HUGO_SYMBOL | FUSION | CENTER | DNA_SUPPORT | RNA_SUPPORT | FRAME | COMMENTS |
-| --------- | ------ | ------ | ------ | ---- | --------- | ------ | ------ | ------ | ---- |
-| Sample1 | EGFR | EGFR fusion | VICC | yes | unknown | unknown | |
-| Sample2 | MAP2K4 | MAP2K4-intragenic | VICC | yes | unknown | unknown |  |
-| Sample3 | SMAD4 | SMAD4-intragenic | VICC | yes | unknown | unknown |  |
+| --------- | ------ | ------ | ------ | ---- | --------- | ------ | ------ |
+| Sample1 | EGFR | EGFR fusion | VICC | yes | unknown | unknown | ... |
+| Sample2 | MAP2K4 | MAP2K4-intragenic | VICC | yes | unknown | unknown | ... |
+| Sample3 | SMAD4 | SMAD4-intragenic | VICC | yes | unknown | unknown | ... |
 | ... | ... | ... | ... | ... | ... | ... | ... |

@@ -15,19 +15,19 @@ Beta version | http://www.analytics.pancreasexpression.org/beta_version | /var/w
 
 ### Available Analyses
 
-Description | Wiki page
------------- | ------------
-Data sources for the analysis | [wiki/available_analysis/Data-sources](https://github.com/wynstep/PED_Analytics_UG/blob/master/wiki/available_analysis/data_sources.md)|
-Principal Component Analysis | [wiki/available_analysis/PCA](https://github.com/wynstep/PED_Analytics_UG/blob/master/wiki/available_analysis/pca.md)|
-Estimates of tumour purity | [wiki/available_analysis/Estimate-tumour-purity](https://github.com/wynstep/PED_Analytics_UG/blob/master/wiki/available_analysis/tumour_purity.md)|
-Gene expression profiles | [wiki/available_analysis/Expression-profile](https://github.com/wynstep/PED_Analytics_UG/blob/master/wiki/available_analysis/gene_expression.md)|
-Evaluation of correlation between genes | [wiki/available_analysis/Correlation](https://github.com/wynstep/PED_Analytics_UG/blob/master/wiki/available_analysis/correlation.md)|
-Survival analysis | [wiki/available_analysis/Survival-analysis](https://github.com/wynstep/PED_Analytics_UG/blob/master/wiki/available_analysis/survival.md)|
-Protein-protein interaction (PPI) networks | [wiki/available_analysis/Gene-networks](https://github.com/wynstep/PED_Analytics_UG/blob/master/wiki/available_analysis/gene_network.md)|
-Copy number alterations | [wiki/available_analysis/Copy-number-alterations](https://github.com/wynstep/PED_Analytics_UG/blob/master/wiki/available_analysis/copy_number_alterations.md)|
-Gene fusion | [wiki/available_analysis/Gene-fusion](https://github.com/wynstep/PED_Analytics_UG/blob/master/wiki/available_analysis/gene_fusion.md)|
-Exploring mutation profiles across samples | [wiki/available_analysis/Mutations](https://github.com/wynstep/PED_Analytics_UG/blob/master/wiki/available_analysis/mutations.md)|
-Integrating Gene expression, copy number and mutations | [wiki/available_analysis/Data-integration](https://github.com/wynstep/PED_Analytics_UG/blob/master/wiki/available_analysis/data_integration.md)|
+Description | Internal code | Wiki page
+------------ | ----------- | ------------
+Data sources for the analysis | - | [wiki/available_analysis/Data-sources](https://github.com/wynstep/PED_Analytics_UG/blob/master/wiki/available_analysis/data_sources.md)|
+Principal Component Analysis | pca | [wiki/available_analysis/PCA](https://github.com/wynstep/PED_Analytics_UG/blob/master/wiki/available_analysis/pca.md)|
+Estimates of tumour purity | tumour_purity | [wiki/available_analysis/Estimate-tumour-purity](https://github.com/wynstep/PED_Analytics_UG/blob/master/wiki/available_analysis/tumour_purity.md)|
+Gene expression profiles | gene_expression | [wiki/available_analysis/Expression-profile](https://github.com/wynstep/PED_Analytics_UG/blob/master/wiki/available_analysis/gene_expression.md)|
+Evaluation of correlation between genes | correlation | [wiki/available_analysis/Correlation](https://github.com/wynstep/PED_Analytics_UG/blob/master/wiki/available_analysis/correlation.md)|
+Survival analysis | survival_analysis | [wiki/available_analysis/Survival-analysis](https://github.com/wynstep/PED_Analytics_UG/blob/master/wiki/available_analysis/survival.md)|
+Protein-protein interaction (PPI) networks | gene_networks | [wiki/available_analysis/Gene-networks](https://github.com/wynstep/PED_Analytics_UG/blob/master/wiki/available_analysis/gene_network.md)|
+Copy number alterations | cna | [wiki/available_analysis/Copy-number-alterations](https://github.com/wynstep/PED_Analytics_UG/blob/master/wiki/available_analysis/copy_number_alterations.md)|
+Gene fusion | fusion | [wiki/available_analysis/Gene-fusion](https://github.com/wynstep/PED_Analytics_UG/blob/master/wiki/available_analysis/gene_fusion.md)|
+Exploring mutation profiles across samples | mutations | [wiki/available_analysis/Mutations](https://github.com/wynstep/PED_Analytics_UG/blob/master/wiki/available_analysis/mutations.md)|
+Integrating Gene expression, copy number and mutations | data_integration | [wiki/available_analysis/Data-integration](https://github.com/wynstep/PED_Analytics_UG/blob/master/wiki/available_analysis/data_integration.md)|
 
 ### Maintenance of the resource
 
