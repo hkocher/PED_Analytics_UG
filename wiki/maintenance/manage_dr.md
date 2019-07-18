@@ -70,6 +70,7 @@ I created a python script dedicated to the update of the gene lists, starting fr
 ### Run bioinformatics analysis
 
 __PLEASE NOTE__: these analysis can be run JUST if _expression data_ are available in your dataset, otherwise please skip this section.
+
 | Analysis | Command |
 | ------ | ---- |
 | PCA | `Rscript scripts/R_scripts/PCA.R -e data/DR0004/eData.1.tsv -t data/DR0004/target.1.tsv -c target -u array -p 3 -d data/DR0004/` |
